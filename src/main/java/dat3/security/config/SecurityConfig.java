@@ -71,6 +71,7 @@ public class SecurityConfig {
             .requestMatchers(mvcMatcherBuilder.pattern("/error")).permitAll()
 
             //This is for demo purposes only, and should be removed for a real system
+            //.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/api/demo/admin")).hasAuthority("ADMIN")
             //.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/api/test/user-only")).hasAuthority("USER")
             //.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/api/test/admin-only")).hasAuthority("ADMIN")
 
